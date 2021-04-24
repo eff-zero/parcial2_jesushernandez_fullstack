@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import Botones from './components/Botones';
+import Footer from './components/Footer';
+import Header from './components/Header';
+
+const info = [
+    {
+      title: "Today's workout plan",
+      text: "We're gonna do 3 fundamental exercises.",
+    },
+    {
+      title: "First, 10 push-ups",
+      text: "Do 10 reps. Remember about full range of motion. Don't rush.",
+    },
+    {
+      title: "Next, 20 squats",
+      text: "Squats are important. Remember to keep your back straight.",
+    },
+    {
+      title: "Finally, 15 sit-ups",
+      text: "Slightly bend your knees. Remember about full range of motion.",
+    },
+    {
+      title: "Great job!",
+      text: "You made it, have a nice day and see you next time!",
+    }
+];
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header />
+        <Botones 
+          info = {info}
+        />
+        <Footer />
     </div>
   );
 }
