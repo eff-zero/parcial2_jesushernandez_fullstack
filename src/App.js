@@ -23,6 +23,10 @@ const info = [
     {
       title: "Great job!",
       text: "You made it, have a nice day and see you next time!",
+    }, 
+    {
+      title: "Parcial Full Stack II",
+      text: "Jesus Hernandez",
     }
 ];
 
